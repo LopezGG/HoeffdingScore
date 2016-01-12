@@ -19,7 +19,7 @@ namespace GramScoreGenerator
         public float Set_expectation = 0;// Expectated value of words(seperated by \w) occuring(may not be together)
         public int Set_frequency = 0;// Number of queries in which the words(seperated by \w) occur 
         public float Hoefding_score = 0;
-        public bool is_significant_gram;
+        //public bool is_significant_gram;
         public bool to_be_deleted;
 
         public TrieNode ()

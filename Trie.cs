@@ -217,7 +217,7 @@ namespace GramScoreGenerator
             {
                 stack_list.Push(p.letter);
                 List<Data> data_list = new List<Data>();
-                if((p.endOfWord) && (p.NumOfWords > 1) && (p.frequency >= 20)) //unigrams need not be considered: see paper for reason and we want bi/trigram to occur atleast 10 times to be considered
+                if((p.endOfWord) && (p.NumOfWords > 1) && (p.frequency >= 5)) //unigrams need not be considered: see paper for reason and we want bi/trigram to occur atleast 10 times to be considered
                 {
                     TrieNode new_p;
                     string temp = string.Join("", stack_list.ToArray().Reverse());
